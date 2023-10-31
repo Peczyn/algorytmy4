@@ -192,3 +192,16 @@ Osoba *Kolejka::zdejmijOsobe() {
     temp->next=nullptr;
     return temp;
 }
+
+/*
+W banku jest czynne tylko jedno stanowisko obsługujące klientów. Napisz przy pomocy kolejki FIFO
+reprezentację takiej sytuacji zakładając, że:
+• Każdy klient jest obiektem z polami: imię, wiek, zarobki,
+• W każdej jednostce czasu* istnieje 50% szans na to, że do banku wejdzie następny klient,
+• W każdej jednostce czasu* istnieje 25% szans na to, że klient będzie musiał uzupełnić
+dokumenty (trafi wtedy na koniec kolejki),
+1. Napisz funkcję, która policzy średnie zarobki wszystkich klientów stojących w kolejce(3.0),
+2. Napisz funkcję, która zwróci listę klientów których zarobki mieszczą się w zadanym
+przedziale(4.0),
+3. Napisz funkcję, która pozwoli na edycję danych klienta na wybranej pozycji w kolejce(5.0).
+ */
